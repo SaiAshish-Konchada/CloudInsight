@@ -297,9 +297,10 @@ a{
 .card--secondary .badge--secondary{
     background: #02cdf1;
 }
+
 /* Plans */
 
-h3{
+.plan__name{
     margin:0;
     color:#fff;
     font-weight: 500;
@@ -359,4 +360,22 @@ h3{
         font-size: 1.7rem;
         
     }
+}
+
+/* Media */
+
+.media{
+    display: flex;
+}
+
+.media__title{
+    margin-top: 0;
+    }
+
+.media__body{
+    margin:0 2rem;
+}
+
+.media__image{
+    margin-top:  1rem;
 }
