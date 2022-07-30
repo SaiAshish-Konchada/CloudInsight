@@ -198,7 +198,7 @@ a{
     font-size: 1.8rem;
     font-weight: 600;
     outline:0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -289,6 +289,7 @@ a{
 .input-group .input{
     border:0;
     flex-grow: 1;
+    width:0;
 }
 
 .input-group .btn{
@@ -660,11 +661,11 @@ a{
     margin: 0;
 }
 
-.nav__logo{
+.logo{
     width: 3rem;
 }
 
-.nav__logo-heading{
+.logo__heading{
     font-size: 3rem;
     color:#fff;
     margin-top: 0;
@@ -751,8 +752,9 @@ a{
 }
 
 .block__domain-prices{
+    color:var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -819,4 +821,85 @@ a{
         max-width: 700px;
         justify-self: end;
     }
+}
+
+/* Footer */
+
+.footer{
+    background: #232323;
+}
+
+.footer__section{
+    padding: 2rem;
+    border-bottom: 2px solid #393939;
+}
+
+.footer a{
+    color: #777;
+    transition: color .3s;
+}
+
+.footer a:hover{
+    color:#fff;
+}
+
+.footer__section .list{
+    margin: 0;
+}
+.footer__heading{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer__brand{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.footer__copyright{
+    font-size: 2.1rem;
+    color:#fff;
+    opacity: .3;
+}
+
+.footer__logo{
+    width: 100%;
+    max-width: 300px;
+}
+
+@media screen and (min-width:768px) {
+
+    .footer__sections{
+        grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    }
+
+    .footer .collapsible__chevron{
+        display: none;
+    }
+    
+    .footer .collapsible__content{
+        opacity: 1;
+        max-height: 100%;
+    }
+
+    .footer__brand{
+        order:-1;
+        margin-top: 1rem;
+        padding-top: 4rem;
+        margin-right: 1rem;
+    }
+
+    .footer__copyright{
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .footer__section{
+        border:0;
+    }
+
+    .footer__heading{
+        font-size: 1.6rem;
+    }
+
 }
