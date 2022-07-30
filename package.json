@@ -1,0 +1,23 @@
+{
+  "name": "cloudinsight",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaiAshish-Konchada/CloudInsight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaiAshish-Konchada/CloudInsight/issues"
+  },
+  "homepage": "https://github.com/SaiAshish-Konchada/CloudInsight#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
